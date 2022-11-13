@@ -10,7 +10,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 95px 400px 400px 100px;
     grid-row-gap: 50px;
-    grid-template-areas: 
+    grid-template-areas:
     "header header header header"
     "main main main main"
     "main main main main"
@@ -39,14 +39,14 @@ main{
     grid-area: main;
     height: 850px;
     background-image: url(./imagenes/tumblr_oiwyu1eDWL1tf8vylo1_1280.jpg);
-}   
+}
 
 
 /* contenido del footer */
 footer{
     grid-area: footer;
-    
-    
+
+
 }
 
 
@@ -55,7 +55,7 @@ footer{
     justify-content: center;
     margin: 20px;
   }
-  
+
   .imagen{
     height: 45px;
     width: 45px;
@@ -66,12 +66,12 @@ footer{
 .section{
     display:flex ;
     flex-direction: row;
-    
+
 }
 .section2{
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .hijo{
@@ -97,6 +97,13 @@ p{
    color: black;
 }
 
+/* estilo formulario */
+form{
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
+
 /* media Querie mobile */
 
 @media screen and (max-width: 768px){
@@ -107,11 +114,12 @@ p{
     body{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 100px 600px 95px;
-        grid-template-areas: 
-        "header header"
+        grid-template-rows: 200px 2100px 100px;
+        grid-template-areas:
+        "header header "
         "main main "
-        "footer footer";
+        "footer footer"
+        ;
 
         max-width: 768px;
     }
@@ -119,15 +127,25 @@ p{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
     .section2{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+       flex-direction: column;
+       align-items: center;
+       gap: 20px;
     }
 
     img{
+        height: 150px;
+        width: 150px;
         max-width: 100%;
+
+    }
+
+    .parrafo-main{
+        /* display: none; */
     }
 }
+
