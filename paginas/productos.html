@@ -1,51 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Productos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <title>Productos</title>
 </head>
+
 <body class="fondo-body">
-    <main>
-        <div>
-         <div>
-            <H2 class="productos">Torta matera</H2>
-            <p>Esta elaborada con materia prima de primera calidad , harina ,azucar,huevos y saboriza con lo que vos mas prefieras</p>
-         </div>
-         <div>
-          <img class="imagen-producto" src="../imagenes/biscochuelo para el mate.jpg" alt="torta matera">
-         </div>
-          <div>
-            <h2 class="productos">pasta frola</h2>
-            <p>Pastafrola es una tarta artesanal típica para compartir en el mate o en la mesa dulce de tus eventos ,Esta elaborada con una masa suave y cubierta tradicionalmente con dulce de batata , dulce de membrillo y la variantes con dulce de leche Es adornada con tiras delgadas de la misma masa, sobre la capa de dulce.</p>
-          </div>
-          <div>
-            <img class="imagen-producto" src="../imagenes/pastafrola.jpg" alt="pasta frola">
-          </div>
-          <div>
-            <h2 class="productos">torta ricota</h2>
-            <p>La torta de ricota es un clásico de la gastronomía dulce argentina.Ideal para compartir en la merienda o en el mate En dulce meru tenemos receta propia , esta elaborada con productos de primera calidad ,harina ,mateca ,azucar ,ricota .Ese aroma y sabor tan particular se lo da nuestro toque especial .</p>
-          </div>
-            <div>
-                <img class="imagen-producto" src="../imagenes/torta de ricota.jpg" alt="torta de ricota">
-            </div>
-           <div>
-            <h2 class="productos">budin</h2>
-            <p>Nuestros budines están elaborados con materia prima de primera calidad ,son esponjosos tenemos para todos los gustos y son ideales para cualquier ocasión.Gran variedad de sabores limon,chocolate ,naranja ,vainilla , vainilla con chip de chocolate ,marmolado ,con nuez y los especiales de dulce meru los budines navideños.</p>
-           </div>
-            <img class="imagen-producto" src="../imagenes/budin.jpg" alt="budin">
-           </div>
-           <div>
-            <h2 class="productos">torta golosinera</h2>
-            <p>Nuestras famosas y más pedidas tortas golosineras . Elaboradas con materia prima de primera calidad ,bizcochuelos humedos y esponjosos ,gran variedad de rellenos uno más rico que el otro .Las Golosinas son a elección dependiendo el stock que diapongamos a la hora del pedido</p>
-           </div> 
-            <div>
-                <img class="imagen-producto" src="../imagenes/torta golosinera.jpg" alt="golosinera"> 
-            </div>
-            <a href="../index.html">volver al inicio</a>
+  <main>
+    <header>
+      <div class="container text-center">
+        <a href="../index.html">
+          <img class="logo-header" src="../imagenes/cupcake-6188629_640.png" alt="mofin">
+        </a>
+        <h1>DULCE MERU</h1>
+        <nav class="navegador">
+          <a href="./productos.html">Productos</a>
+          <a href="./sobre-nosotros.html">Sobre nosotros</a>
+          <a href="./contacto.html">Contacto</a>
+          <a href="./servicios.html">Servicios</a>
+        </nav>
+      </div>
+    </header>
+    <div id="card-padre">
+      <div id="card-product" class="card" class="g-col-6 g-col-md-4">
+        <img src="../imagenes/biscochuelo para el mate.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title ">Torta Matera</h5>
+          <p class="card-text">Esta elaborada con materia prima de primera calidad, harina, azucar, huevos y saboriza
+            con lo que vos mas prefieras.</p>
+          <a href="./contacto.html" class="btn btn-primary">Encargar Producto</a>
         </div>
-    </main>
+      </div>
+      <div id="card-product" class="card">
+        <div>
+          <img src="../imagenes/pastafrola.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Pasta Frola</h5>
+          <p class="card-text">Pastafrola es una tarta artesanal típica para compartir en el mate o en la mesa dulce de
+            tus eventos ,Esta
+            elaborada con una masa suave y cubierta tradicionalmente con dulce de batata, dulce de membrillo y la
+            variantes
+            con dulce de leche Es adornada con tiras delgadas de la misma masa, sobre la capa de dulce.</p>
+          <a href="./contacto.html" class="btn btn-primary">Encargar Producto</a>
+        </div>
+      </div>
+      <div id="card-product" class="card">
+        <img src="../imagenes/torta de ricota.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Torta de Ricota</h5>
+          <p class="card-text">La torta de ricota es un clásico de la gastronomía dulce argentina. Ideal para compartir
+            en la merienda o en el
+            mate. En dulce meru tenemos receta propia, esta elaborada con productos de primera calidad, harina, manteca
+            , azucar, ricota. Ese aroma y sabor tan particular se lo da nuestro toque especial.</p>
+          <a href="./contacto.html" class="btn btn-primary">Encargar Producto</a>
+        </div>
+      </div>
+      <div id="card-product" class="card">
+        <img src="../imagenes/budin.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Budin</h5>
+          <p class="card-text">Nuestros budines están elaborados con materia prima de primera calidad, son esponjosos
+            tenemos para todos los
+            gustos y son ideales para cualquier ocasión. Gran variedad de sabores limon,chocolate, naranja, vainilla,
+            vainilla con chip de chocolate, marmolado, con nuez y los especiales de dulce meru los budines navideños.
+          </p>
+          <a href="./contacto.html" class="btn btn-primary">Encargar Producto</a>
+        </div>
+      </div>
+      <div id="card-product" class="card">
+        <img src="../imagenes/torta golosinera.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Torta Golosinera</h5>
+          <p class="card-text">Nuestras famosas y más pedidas tortas golosineras. Elaboradas con materia prima de
+            primera calidad
+            , bizcochuelos humedos y esponjosos, gran variedad de rellenos uno más rico que el otro. Las Golosinas son a
+            elección dependiendo el stock que dispongamos a la hora del pedido.</p>
+          <a href="./contacto.html" class="btn btn-primary">Encargar Producto</a>
+        </div>
+      </div>
+    </div>
+    <a id="button-index" href="../index.html">Volver al inicio</a>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
