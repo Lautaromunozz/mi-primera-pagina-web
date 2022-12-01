@@ -1,155 +1,167 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
 }
 
-#card-padre{
+#card-padre {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#card-product{
+#card-product {
     margin-top: 40px;
     width: 18rem;
 }
 
-#button-index{
+#button-index {
     font-size: 20px;
     transition-property: font-size;
     transition-duration: 4s;
     text-decoration: none;
     color: black;
     margin: 15px;
+    
+    &:hover {
+        font-size: 36px;
+        border: solid 3px white;
+        background-color: #dddddd;
+    }
 }
 
-#button-index:hover{
-    font-size: 36px;
-    border: solid 3px white;
-    background-color: #dddddd;
+.orderedlist{
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    li {
+        background-color: white;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
 }
 
-body{
+body {
     background-image: linear-gradient(to right, rgb(255, 175, 188), white);
 }
 
-.headerhijo{
+.headerhijo {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.logo-header{
+.logo-header {
     height: 100px;
     width: 100px;
     margin-bottom: 10px;
 }
 
 /* todo del main */
-.section{
+.section {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
 }
 
-.section2{
+.section2 {
     display: flex;
     flex-direction: row;
 }
 
-img{
+img {
     height: 230px;
     width: 230px;
 }
 
-section div{
+section div {
     margin: 10px;
 }
 
 /* todo del footer */
-.logito{
+.logito {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .imagen{
+.imagen {
     height: 45px;
     width: 45px;
     margin: 20px;
 }
 
 
-.navegador a{
+.navegador a {
     color: black;
     margin: 10px;
-    text-decoration: none  
- }
 
- .navegador a:hover{
-    background-color: rgb(58, 58, 58);
-    color: white;
- }
- /* estilo tabla */
- table {
-     font-family: arial, sans-serif;
-     border-collapse: collapse;
-     width: 100%;
-     border: black;
-     border: solid 3px;
-   }
+    text-decoration: none;
+    &:hover {
+        background-color: rgb(58, 58, 58);
+        color: white;
+    }
+}
 
-   td, th {
-     border: 3px solid black;
-     text-align: left;
-     padding: 8px;
-   }
+/* estilo tabla */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: black;
+    border: solid 3px;
+}
 
-   tr:nth-child(even) {
+td,
+th {
+    border: 3px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
     border: solid black;
-     background-color: #dddddd;
-   }
+    background-color: #dddddd;
+}
 
- /* estilo formulario */
- form{
-     margin: auto;
-     width: 300px;
-     padding: 20px;
- }
+/* estilo formulario */
+form {
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+}
 
- .nosotros{
-    background-color: lightpink
-
- }
-
- h2{
+h2 {
     margin: 20px;
- }
+}
 
-.sobrenosotros-hijo{
+.sobrenosotros-hijo {
     text-align: center;
     margin: 30px;
 }
 
-input{
+input {
     margin: 5px;
 }
 
 /* medu8ia queris de celular */
 
- @media screen and (max-width: 600px){
-    
-    h1{
+@media screen and (max-width: 600px) {
+
+    h1 {
         font-size: 20px;
     }
-    
-    header{
+
+    header {
         margin-top: 10px;
     }
 
     /* todo del main */
-    .section{
+    .section {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
@@ -157,24 +169,25 @@ input{
         width: fit-content;
     }
 
-    .section2{
+    .section2 {
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
         height: fit-content;
         width: fit-content;
     }
+
     /**/
 
     /*Todo de las cards*/
-    #card-padre{
+    #card-padre {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
     }
 
-    #card-product{
+    #card-product {
         width: 18rem;
         margin: 10px;
     }
@@ -182,7 +195,7 @@ input{
     /**/
 
 
-    .logo-header{
+    .logo-header {
         height: 50px;
         width: 50px;
         margin-top: 10px;
